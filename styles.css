@@ -1,0 +1,126 @@
+:root {
+    --color-LightCyan: hsl(193, 38%, 86%);
+    --color-NeonGreen: hsl(150, 100%, 66%);
+    --color-GrayishBlue: hsl(217, 19%, 38%);
+    --color-DarkGrayishBlue: hsl(217, 19%, 24%);
+    --color-DarkBlue: hsl(218, 23%, 16%);
+}
+
+*,
+*::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    justify-content: center;
+	min-height: 100vh;
+	font-family: 'Manrope', sans-serif;
+	background-color:var(--color-DarkBlue);
+    margin: 1rem;
+}
+
+h1{
+    font-size: 1rem;
+    color: var(--color-NeonGreen);
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+h2{
+    color: var(--color-LightCyan);
+    font-weight: 800;
+ 
+
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    /* position: relative; */
+    display: grid;
+    justify-content: center;
+    position:relative;
+    background-color: var(--color-DarkGrayishBlue);
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content{
+    display: grid;
+    padding: 3rem 1.5rem;
+    justify-content: center;
+    text-align: center;
+    grid-gap:20px;
+    /* position: relative; */
+}
+
+.btn{
+    display: grid;
+    justify-content: center;
+   
+ background-color: var(--color-NeonGreen);
+border-radius: 100px;
+width: 60px;
+height: 60px;
+padding: 0;
+border: none;
+align-items: center;
+
+}
+
+.btnn{
+     position: absolute;
+display: grid;
+justify-content: center;
+transform: translateY(300%);
+}
+
+
+
+.btn:active {
+    box-shadow: 0 0 40px var(--color-NeonGreen);
+}
+
+
+
+@media (min-width:768px) {
+
+    .box{
+        width:500px;
+
+    }
+
+}
+
+@media (min-width:1024) {
+    .btn:hover {
+        cursor: pointer;
+    box-shadow: 0 0 40px var(--color-NeonGreen);
+    }
+    
+}
