@@ -117,7 +117,7 @@ transform: translateY(300%);
 
 }
 
-@media (min-width:1024) {
+@media (min-width:1024px) {
     .btn:hover {
         cursor: pointer;
     box-shadow: 0 0 40px var(--color-NeonGreen);
